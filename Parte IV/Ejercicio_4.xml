@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejemplo.css"?> 
+
+<equipo>
+
+<Cuerpo_tecnico id="tecnicos">
+              <identificador>Cuerpo Tecnico</identificador>
+             <tecnico>
+               <nombre>Sebastias Aguirre</nombre>
+             </tecnico>
+             <tecnico_auxiliar>
+             <nombre>Pedro Fernandez</nombre>
+             </tecnico_auxiliar>
+             <preparador_fisico>
+             <nombre>Juan Pablo</nombre>
+             </preparador_fisico>
+        </Cuerpo_tecnico>
+    
+        <cuerpo_medico>
+                 <Identificador>Cuerpo Medico</Identificador>
+                <Medicos id="medicos">
+                    <nombre>Juan De Dios </nombre>
+                    <nombre>Fernando  Lopez</nombre>
+                </Medicos>
+                <socorristas id="socorristas">
+                  <nombre>Omar Molina</nombre>
+                  <nombre>Elmer Ramirez</nombre>
+                  <nombre>Carlos Almarado</nombre>
+                  <nombre>Armando Arevalo</nombre>
+                </socorristas>
+        </cuerpo_medico>
+        
+        <jugadores id="jugadores">
+               <identificador>Jugadores</identificador>
+             <porteros id="P">
+                   <identificador>Portero</identificador>
+                   <nombre>Keylor Navas</nombre>
+                   <nombre>Iker Casillas</nombre>
+                   <nombre>David de Gea</nombre>
+             </porteros>
+             
+             <defensas id="D">
+                  <identificador>Defensas</identificador>
+                  <nombre>Sergio Ramon</nombre>
+                  <nombre>Thiago Silva</nombre>
+                  <nombre>Dani Alves</nombre>
+                  <nombre>Pedro Beltran</nombre>
+                   <nombre>Eric Zavaleta</nombre>
+                  <nombre>Fernando Avelar</nombre>
+                  <nombre>Jose Fuentes</nombre>
+                  <nombre>Mario Casas</nombre>
+             </defensas>
+             
+             <mediocampistas id="M">
+                    <identificador>Mediocampistas</identificador>
+                    <nombre>Julio Cesar</nombre>
+                    <nombre>Juan Mata</nombre>
+                    <nombre>Felipe Dueñas</nombre>
+                    <nombre>Adrian Guzman</nombre>
+                    <nombre>Marcelo Flores</nombre>
+                    <nombre>Gabriel Muñoz</nombre>
+                    <nombre>Santiago Dueñas</nombre>
+                    <nombre>Marlio Aguirre</nombre>
+             </mediocampistas>
+             
+             <delanteros id="D">
+                  <identificador>Delanteros</identificador>
+                  <nombre>Leonel Messi</nombre>
+                  <nombre>Cristiano Ronaldo</nombre>
+                  <nombre>Carlos Alfaro</nombre>
+             </delanteros>
+
+
+        </jugadores>
+
+</equipo>
