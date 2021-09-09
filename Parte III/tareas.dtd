@@ -1,0 +1,35 @@
+<!--Archivo creado por PC15007-->
+<!ELEMENT tareas (grupo+)>
+<!ATTLIST tareas procedencia CDATA #FIXED "Universidad de El Salvador">
+<!ATTLIST tareas formado (GT | GL | GD) #REQUIRED>
+<!ATTLIST tareas num CDATA #REQUIRED>
+
+<!ELEMENT grupo (facultad, carrera, actividad, tema, integrante+)>
+<!ATTLIST grupo materia CDATA ID #REQUIRED>
+<!ATTLIST grupo encargado CDATA #REQUIRED>
+<!ATTLIST grupo numgrupo CDATA #REQUIRED>
+<!ATTLIST grupo tema CDATA #REQUIRED>
+
+<!ELEMENT facultad (#PCDATA)>
+<!ATTLIST facultad codfac CDATA #REQUIRED>
+
+<!ELEMENT carrera (#PCDATA)>
+<!ATTLIST carrera codcarr CDATA #REQUIRED>
+
+<!ELEMENT actividad (#PCDATA)>
+<!ATTLIST actividad valor CDATA #REQUIRED>
+
+<!ELEMENT tema (#PCDATA)>
+
+<!ELEMENT integrante (carnet, nombre, apellido, telefono?)>
+<!ATTLIST integrante coordinador (si | no) #REQUIRED>
+<!ATTLIST integrante sexo (m | f) #REQUIRED>
+<!ATTLIST integrante edad CDATA #IMPLIED>
+
+<!ELEMENT carnet (#PCDATA)>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT apellido (#PCDATA)>
+
+<!ELEMENT telefono (#PCDATA)>

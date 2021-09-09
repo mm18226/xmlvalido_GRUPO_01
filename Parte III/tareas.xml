@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet href="tareas.css"? type="text/css"> -->
+<!DOCTYPE tareas SYSTEM "tareas.dtd">
+<!--Archivo creado por PC15007-->
+
+<tareas procedencia="Universidad de El Salvador" formado="GT" num="1">
+    <grupo materia="Introduccion" encargado="Dr. Chapatin" numgrupo="1">
+        <facultad codfac="MED">Medicina</facultad>
+        <carrera codcarr="ODN">Odontologia</carrera>
+        <actividad valor="20">Trabajo de investigacion</actividad>
+        <tema>Historia de la Odontologia</tema>
+        <integrante coordinador="si" sexo="m" edad="12">
+            <carnet>EC2021</carnet>
+            <nombre>Chavo</nombre>
+            <apellido>Del 8</apellido>
+            <telefono>1234-5123</telefono>
+        </integrante>
+        <integrante coordinador="no" sexo="f" edad="40">
+            <carnet>FM2021</carnet>
+            <nombre>Florinda</nombre>
+            <apellido>Mesa</apellido>
+            <telefono>2345-6234</telefono>
+        </integrante>
+        <integrante coordinador="no" sexo="m" edad="45">
+            <carnet>PG2021</carnet>
+            <nombre>Profesor</nombre>
+            <apellido>Girafales</apellido>
+            <telefono>3456-7345</telefono>
+        </integrante>
+        <integrante coordinador="no" sexo="m" edad="13">
+            <carnet>QM2021</carnet>
+            <nombre>Quico</nombre>
+            <apellido>Mesa</apellido>
+            <telefono>4567-8456</telefono>
+        </integrante>
+    </grupo>
+</tareas>
