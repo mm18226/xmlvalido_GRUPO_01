@@ -1,0 +1,29 @@
+<!--Ejercicio_4.dtd-->
+
+<!ELEMENT equipo(Cuerpo_tecnico?, cuerpo_medico, jugadores+)>
+<!ELEMENT Cuerpo_tecnico(identificador, tecnico ,tecnico_auxiliar,preparador_fisico)>
+<!ELEMENT identificador(#PCDATA)>
+<!ELEMENT tecnico(nombre)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT tecnico_auxiliar(nombre)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT preparador_fisico(nombre)>
+<!ELEMENT nombre(#PCDATA)>
+
+<!ELEMENT cuerpo_medico(identificador, medicos, socorristas)>
+<!ELEMENT identificador(#PCDATA)>
+<!ELEMENT medicos(nombre+)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT socorristas(nombre+)>
+<!ELEMENT nombre(#PCDATA)>
+
+<!ELEMENT jugadores(identificador,porteros,defensas,mediocampistas,delanteros)>
+<!ELEMENT identificador(#PCDATA)>
+<!ELEMENT porteros(identificador,nombre+)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT defensas(identificador,nombre+)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT mediocampistas(identificador,nombre+)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT delanteros(identificador,nombre+)>
+<!ELEMENT nombre(#PCDATA)>
