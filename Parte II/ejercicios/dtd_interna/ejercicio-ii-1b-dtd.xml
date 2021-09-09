@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ejemplodtd1.xml GRUPO 01 -->
+<!-- ejerciciodtd1b.xml GRUPO 01 -->
 
 <!DOCTYPE fichero [
-		<!ELEMENT fichero (ficha+)>
+		<!ELEMENT fichero (ficha+, a)>
 		<!ELEMENT ficha (nombre, apellido, direccion*, DUI?)>
 		<!ELEMENT nombre (#PCDATA)>
 		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
@@ -10,6 +10,9 @@
 		<!ELEMENT apellido (#PCDATA)>
 		<!ELEMENT direccion (#PCDATA)>
 		<!ELEMENT DUI (#PCDATA)>
+		<!ELEMENT a (#PCDATA)>
+			<!ATTLIST a href CDATA #REQUIRED>
+			<!ATTLIST a xmlns CDATA #REQUIRED>
 		]>
 <fichero>
  <ficha>

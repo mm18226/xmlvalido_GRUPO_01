@@ -27,8 +27,8 @@ fichero{    width: 100%;
     right: 0px;
     border-bottom: 20px solid darken(teal, 5%);
     border-left: 20px solid darken(teal, 5%);
-    border-right: 20px solid yellow;
-    border-top: 20px solid yellow;
+    border-right: 20px solid teal;
+    border-top: 20px solid teal;
     position: absolute;
     filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
 }
@@ -40,8 +40,8 @@ ficha::before{
       height: 0px;
       border-top: 40px solid darken(teal, 5%);
       border-right: 40px solid darken(teal, 5%);
-      border-left: 40px solid yellow;
-      border-bottom: 40px solid yellow;
+      border-left: 40px solid teal;
+      border-bottom: 40px solid teal;
       bottom: 0px;
       left: 0px;
       position: absolute;

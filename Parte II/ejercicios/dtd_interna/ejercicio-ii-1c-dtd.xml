@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="estilo-ii-1c.css" ?>
-<!-- ejemplodtd1.xml GRUPO 01 -->
+<!-- ejerciciodtd1c.xml GRUPO 01 -->
 
 <!DOCTYPE fichero [
 		<!ELEMENT fichero (ficha+, a)>
@@ -11,9 +11,9 @@
 		<!ELEMENT apellido (#PCDATA)>
 		<!ELEMENT direccion (#PCDATA)>
 		<!ELEMENT DUI (#PCDATA)>
+		<!ELEMENT a (#PCDATA)>
 			<!ATTLIST a href CDATA #REQUIRED>
 			<!ATTLIST a xmlns CDATA #REQUIRED>
-		<!ELEMENT a (#PCDATA)>
 		]>
 <fichero>
  <ficha>
