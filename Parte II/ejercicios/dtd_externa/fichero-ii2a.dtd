@@ -1,0 +1,35 @@
+<!-- ficha-ii2a.dtd GRUPO 01-->
+	<!ELEMENT fichero (ficha+)>
+		
+		<!ELEMENT ficha (titulo,icon,datos)>
+		<!ELEMENT titulo (#PCDATA)>
+		<!ELEMENT icon (svg)>
+
+    <!ELEMENT svg (path+)>
+    <!ATTLIST svg version CDATA  #REQUIRED>
+    <!ATTLIST svg id CDATA  #REQUIRED>
+    <!ATTLIST svg xmlns CDATA  #REQUIRED>
+    <!ATTLIST svg xlink CDATA #REQUIRED >
+    <!ATTLIST svg x CDATA #REQUIRED >
+    <!ATTLIST svg y CDATA #REQUIRED >
+    <!ATTLIST svg viewBox CDATA #REQUIRED>
+    <!ATTLIST svg enable-background CDATA  #IMPLIED>
+    <!ATTLIST svg height CDATA  #IMPLIED>
+    <!ATTLIST svg width CDATA  #IMPLIED>
+    <!ATTLIST svg space CDATA  #REQUIRED>
+        <!ELEMENT path (#PCDATA)>
+      <!ATTLIST path fill CDATA  #REQUIRED>
+    <!ATTLIST path d CDATA  #REQUIRED>
+
+	<!ELEMENT datos (nombre, apellido, direccion*, DUI?,a)>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
+            	<!ATTLIST nombre edad  CDATA  #IMPLIED>
+		<!ELEMENT apellido (#PCDATA)>
+		<!ELEMENT direccion (#PCDATA)>
+		<!ELEMENT DUI (#PCDATA)>
+		
+		<!ELEMENT a (#PCDATA)>
+		   <!ATTLIST a href CDATA #REQUIRED>
+			<!ATTLIST a xmlns CDATA #REQUIRED>
+		

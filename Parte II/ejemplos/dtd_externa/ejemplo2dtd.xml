@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilo.css" ?>
+<!-- ejemplo2.xml GRUPO 01 -->
+<!DOCTYPE fichero SYSTEM "fichero.dtd">
+<fichero>
+ <ficha>
+  <nombre sexo="masculino">
+         Angel
+  </nombre>
+  <apellido>Barbero</apellido>
+  <direccion>c/Ulises, 36</direccion>
+</ficha>
+</fichero>
