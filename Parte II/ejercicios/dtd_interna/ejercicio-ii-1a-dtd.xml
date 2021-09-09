@@ -21,12 +21,11 @@
     <!ATTLIST svg height CDATA  #IMPLIED>
     <!ATTLIST svg width CDATA  #IMPLIED>
     <!ATTLIST svg space CDATA  #REQUIRED>
-
-	<!ELEMENT datos (nombre, apellido, direccion*, DUI?,a)>
-    <!ELEMENT path (#PCDATA)>
+        <!ELEMENT path (#PCDATA)>
       <!ATTLIST path fill CDATA  #REQUIRED>
     <!ATTLIST path d CDATA  #REQUIRED>
-    
+
+	<!ELEMENT datos (nombre, apellido, direccion*, DUI?,a)>
 		<!ELEMENT nombre (#PCDATA)>
 		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
             	<!ATTLIST nombre edad  CDATA  #IMPLIED>

@@ -2,48 +2,80 @@
 <?xml-stylesheet type="text/css" href="estilo-ii-1b.css" ?>
 <!-- ejerciciodtd1b.xml GRUPO 01 -->
 
-<!DOCTYPE fichero [
-		<!ELEMENT fichero (contenedor, a)>
+<!DOCTYPE cuerpo [
+		<!ELEMENT cuerpo (fichero, a)>
 		
-			<!ELEMENT contenedor (ficha)>
+			<!ELEMENT fichero (ficha)>
 			
-		<!ELEMENT ficha (delante, atras)>
-				<!ELEMENT atras (datos)>
+		<!ELEMENT ficha (adelante, atras)>
 				
-		<!ELEMENT delante (logo)>
-			<!ELEMENT logo (texto)>
+		<!ELEMENT adelante (svg)>
+			<!ELEMENT svg (texto, path+)>
 			<!ELEMENT texto (#PCDATA)>
+    <!ATTLIST svg version CDATA  #REQUIRED>
+    <!ATTLIST svg id CDATA  #REQUIRED>
+    <!ATTLIST svg xmlns CDATA  #REQUIRED>
+    <!ATTLIST svg xlink CDATA #REQUIRED >
+    <!ATTLIST svg x CDATA #REQUIRED >
+    <!ATTLIST svg y CDATA #REQUIRED >
+    <!ATTLIST svg viewBox CDATA #REQUIRED>
+    <!ATTLIST svg enable-background CDATA  #IMPLIED>
+    <!ATTLIST svg height CDATA  #IMPLIED>
+    <!ATTLIST svg width CDATA  #IMPLIED>
+    <!ATTLIST svg space CDATA  #REQUIRED>
+    
+            <!ELEMENT path (#PCDATA)>
+      <!ATTLIST path fill CDATA  #REQUIRED>
+    <!ATTLIST path d CDATA  #REQUIRED>
 		
- 		<!ELEMENT datos (titulo, sdatos)> 
+		<!ELEMENT atras (titulo,datos)>
+ 				<!ELEMENT titulo (#PCDATA | nombre | apellido)*>
+		<!ELEMENT nombre (#PCDATA)>	
+        <!ELEMENT apellido (#PCDATA)>
+		<!ATTLIST apellido edad  CDATA  #IMPLIED>
 
-		<!ELEMENT titulo (#PCDATA | nombre)*>
-		<!ELEMENT nombre (#PCDATA)>
-		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
-            	<!ATTLIST nombre edad  CDATA  #IMPLIED>
+		 <!ELEMENT datos (sdatos+)> 
 
-<!ELEMENT sdatos (apellido, direccion*, DUI?)>
-		<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT sdatos (sexo*,direccion*, DUI?)+>
+<!ELEMENT sexo (#PCDATA)>	
 		<!ELEMENT direccion (#PCDATA)>
 		<!ELEMENT DUI (#PCDATA)>
-		<!ELEMENT a (#PCDATA)>
+
+				<!ELEMENT a (#PCDATA)>
 			<!ATTLIST a href CDATA #REQUIRED>
 			<!ATTLIST a xmlns CDATA #REQUIRED>
+
 		]>
+<cuerpo>
 <fichero>
-<contenedor>
  <ficha>
- <delante><logo><texto></texto></logo>
- </delante>
+ <adelante>
+ <svg version="1.1" id="user" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 785.8159 1010" enable-background="new 0 0 785.8159 1010" height="512px" width="512px" space="preserve">
+	 <texto></texto>
+	<path fill="#323B5A" d="M392.9692,0c135.251,0,244.8565,109.5234,244.8565,244.6914c0,135.312-109.6055,244.8145-244.8565,244.8145
+		c-135.1269,0-244.7734-109.5025-244.7734-244.8145C148.1958,109.5234,257.8423,0,392.9692,0z"/>
+	<path fill="#323B5A" d="M785.8159,1010h-0.5762H0V876.8457c0-173.7793,109.3999-321.1318,261.9521-376.0586l131.0171,174.6016
+		l130.9756-174.6016c152.5938,54.9268,261.8711,202.2793,261.8711,376.0586V1010z"/>
+</svg>
+ </adelante>
  <atras>
+   <titulo>Tarjeta Personal <nombre > Angelina</nombre>
+    <apellido edad="17">Fernandez</apellido> 
+   </titulo>
  <datos>
-  <titulo>Tarjeta Personal <nombre sexo="femenino" edad="17">Angelina</nombre></titulo>
   <sdatos>
-    <apellido>Fernandez</apellido>
-  <direccion>c/Ulises, 36</direccion>
+  <sexo>Femenino</sexo>
+	</sdatos>
+	<sdatos>
+  <direccion>c/Ulises, 36 </direccion>
+  </sdatos>
+  	<sdatos>
+  <DUI>________-_</DUI>
   </sdatos>
   </datos>
  </atras>
  </ficha>
- </contenedor>
-<a href="../../../index.html" xmlns="http://www.w3.org/1999/xhtml">Volver al inicio</a>
-</fichero>
+ </fichero>
+  <a href="../../../index.html" xmlns="http://www.w3.org/1999/xhtml">Volver al inicio</a>
+</cuerpo>
