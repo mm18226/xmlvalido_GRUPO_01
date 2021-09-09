@@ -1,4 +1,4 @@
-﻿* {display:block;
+﻿* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,8 +12,7 @@ fichero{    width: 100%;
 }
     
     ficha { display: inline-block;
-        width: 45%;
-        margin: 0 auto;
+        width: 70%;
         padding: 4rem 1rem 7rem 1rem;
         background-color: teal;
         position: relative;
@@ -60,15 +59,19 @@ ficha::before{
     letter-spacing: 1px;
 }
 
-nombre[sexo]::before {content: " (Genero " attr(sexo) " ) ";color:blue;font-size:3mm; background-color: #ff5555;}
-nombre[sexo]::after {content: " sexo: " attr(sexo);color:yellow; background-color: #33ff70;}
+nombre[sexo]::before {content: " (Genero " attr(sexo) " ) ";color:blue;font-size:3mm; }
+nombre[sexo]::after {content: " sexo: " attr(sexo);color:yellow;}
 
 apellido{    color: snow;
     font-size: 1.1rem;
     line-height: 140%;
+    text-align: center;
+    display:block;
 
 }
 direccion{    color: snow;
     font-size: 1.1rem;
     line-height: 140%;
+    text-align: center;
+    display: block;
 }
