@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilo-ii-1b.css" ?>
 <!-- ejerciciodtd1b.xml GRUPO 01 -->
 
 <!DOCTYPE fichero [
-		<!ELEMENT fichero (ficha+, a)>
-		<!ELEMENT ficha (nombre, apellido, direccion*, DUI?)>
+		<!ELEMENT fichero (contenedor, a)>
+		
+			<!ELEMENT contenedor (ficha)>
+			
+		<!ELEMENT ficha (delante, atras)>
+				<!ELEMENT atras (datos)>
+				
+		<!ELEMENT delante (logo)>
+			<!ELEMENT logo (texto)>
+			<!ELEMENT texto (#PCDATA)>
+		
+ 		<!ELEMENT datos (titulo, sdatos)> 
+
+		<!ELEMENT titulo (#PCDATA | nombre)*>
 		<!ELEMENT nombre (#PCDATA)>
 		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
             	<!ATTLIST nombre edad  CDATA  #IMPLIED>
+
+<!ELEMENT sdatos (apellido, direccion*, DUI?)>
 		<!ELEMENT apellido (#PCDATA)>
 		<!ELEMENT direccion (#PCDATA)>
 		<!ELEMENT DUI (#PCDATA)>
@@ -15,9 +30,20 @@
 			<!ATTLIST a xmlns CDATA #REQUIRED>
 		]>
 <fichero>
+<contenedor>
  <ficha>
-  <nombre sexo="femenino" edad="17">Angelina</nombre>
-  <apellido>Fernandez</apellido>
+ <delante><logo><texto></texto></logo>
+ </delante>
+ <atras>
+ <datos>
+  <titulo>Tarjeta Personal <nombre sexo="femenino" edad="17">Angelina</nombre></titulo>
+  <sdatos>
+    <apellido>Fernandez</apellido>
   <direccion>c/Ulises, 36</direccion>
+  </sdatos>
+  </datos>
+ </atras>
  </ficha>
+ </contenedor>
+<a href="../../../index.html" xmlns="http://www.w3.org/1999/xhtml">Volver al inicio</a>
 </fichero>
