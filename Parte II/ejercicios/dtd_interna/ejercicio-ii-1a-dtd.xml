@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="estilo-ii-1c.css" ?>
 <!-- ejemplodtd1.xml GRUPO 01 -->
 
 <!DOCTYPE fichero [
-		<!ELEMENT fichero (ficha+, a)>
+		<!ELEMENT fichero (ficha+)>
 		<!ELEMENT ficha (nombre, apellido, direccion*, DUI?)>
 		<!ELEMENT nombre (#PCDATA)>
 		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
@@ -11,9 +10,6 @@
 		<!ELEMENT apellido (#PCDATA)>
 		<!ELEMENT direccion (#PCDATA)>
 		<!ELEMENT DUI (#PCDATA)>
-			<!ATTLIST a href CDATA #REQUIRED>
-			<!ATTLIST a xmlns CDATA #REQUIRED>
-		<!ELEMENT a (#PCDATA)>
 		]>
 <fichero>
  <ficha>
@@ -21,6 +17,4 @@
   <apellido>Fernandez</apellido>
   <direccion>c/Ulises, 36</direccion>
  </ficha>
-<a href="../../../index.html" xmlns="http://www.w3.org/1999/xhtml">Volver al inicio</a>
-
 </fichero>
