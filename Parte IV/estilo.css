@@ -9,34 +9,29 @@ equipo {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 #ides{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 135%;
     color: rgb(248, 8, 8);
     display: block;
+    line-height: 60px;
+    font-style: italic;
 
 }
-#tecnicos {
-font-style: italic ;
-display: block;
+nombre{
+    display: list-item;
+    list-style: inside;
+    margin-left: 10px;
 }
 
-#medicos{
-    display:block;
-}
-
-#jugadores{
-    display:block;
-}
 #titulo{
     color: rgb(37, 240, 37);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
+    font-size: 175%;
     line-height: 70px;
     font-weight: 700;
     text-decoration: underline;
 
-   
- 
-
 }
+
