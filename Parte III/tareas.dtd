@@ -1,5 +1,5 @@
 <!--Archivo creado por PC15007-->
-<!ELEMENT tareas (grupo+)>
+<!ELEMENT tareas (grupo+,a)>
 <!ATTLIST tareas procedencia CDATA #FIXED "Universidad de El Salvador">
 <!ATTLIST tareas formado (GT | GL | GD) #REQUIRED>
 <!ATTLIST tareas num CDATA #REQUIRED>
@@ -33,3 +33,6 @@
 <!ELEMENT apellido (#PCDATA)>
 
 <!ELEMENT telefono (#PCDATA)>
+<!ELEMENT a (#PCDATA)>
+			<!ATTLIST a href CDATA #REQUIRED>
+			<!ATTLIST a xmlns CDATA #REQUIRED>
