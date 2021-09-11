@@ -70,17 +70,17 @@ nombre, apellido {
     width: 30%;
 }
 a{
-    display: block;
+    text-align: center;
+    display:inline;
     background:red;
     color: white;
     padding: 15px 20px;
-    margin: 20px 0;
+    margin-inline: 250px;
     border-radius: 5px;
     box-shadow: rgba(0,0,0,0.9);
     transition: all 200ms ease-in-out;
     text-decoration: none;
-    width: 70%;
-    text-align: center;
+    width: 10%;
 }
 
     a:hover {
