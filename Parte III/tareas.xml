@@ -2,7 +2,6 @@
 <?xml-stylesheet href="tareas.css" type="text/css"?>
 <!DOCTYPE tareas SYSTEM "tareas.dtd">
 <!--Archivo creado por PC15007-->
-
 <tareas procedencia="Universidad de El Salvador" formado="GT" num="1">
     <grupo materia="Introduccion" encargado="Dr. Chapatin" numgrupo="1">
         <facultad codfac="MED">Medicina</facultad>
