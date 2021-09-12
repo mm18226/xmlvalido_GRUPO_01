@@ -33,6 +33,7 @@
 <!ELEMENT apellido (#PCDATA)>
 
 <!ELEMENT telefono (#PCDATA)>
+
 <!ELEMENT a (#PCDATA)>
-			<!ATTLIST a href CDATA #REQUIRED>
-			<!ATTLIST a xmlns CDATA #REQUIRED>
+	<!ATTLIST a href CDATA #REQUIRED>
+	<!ATTLIST a xmlns CDATA #REQUIRED>

@@ -17,7 +17,7 @@
 <!ELEMENT socorristas(nombre+)>
 <!ELEMENT nombre(#PCDATA)>
 
-<!ELEMENT jugadores(identificador,porteros,defensas,mediocampistas,delanteros)>
+<!ELEMENT jugadores(identificador,porteros,defensas,mediocampistas,delanteros,a)>
 <!ELEMENT identificador(#PCDATA)>
 <!ELEMENT porteros(identificador,nombre+)>
 <!ELEMENT nombre(#PCDATA)>
@@ -27,3 +27,7 @@
 <!ELEMENT nombre(#PCDATA)>
 <!ELEMENT delanteros(identificador,nombre+)>
 <!ELEMENT nombre(#PCDATA)>
+<!ELEMENT a (#PCDATA)>
+		   <!ATTLIST a href CDATA #REQUIRED>
+			<!ATTLIST a xmlns CDATA #REQUIRED>
+		
