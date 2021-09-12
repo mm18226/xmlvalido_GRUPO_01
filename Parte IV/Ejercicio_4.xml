@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="estilo.css"?>
 <!DOCTYPE equipo SYSTEM "Ejercicio_4.dtd">
-
 <equipo>
-
   <Cuerpo_tecnico id="tecnicos">
+   <cartilla>
     <identificador>Cuerpo Tecnico</identificador>
      <tecnico>
        <nombre>Sebastias Aguirre</nombre>
@@ -15,9 +14,11 @@
      <preparador_fisico>
        <nombre>Juan Pablo</nombre>
      </preparador_fisico>
+      </cartilla>
   </Cuerpo_tecnico>
 
   <cuerpo_medico>
+  <cartilla>
     <Identificador>Cuerpo Medico</Identificador>
     <Medicos id="medicos">
         <nombre>Juan De Dios </nombre>
@@ -29,9 +30,11 @@
       <nombre>Carlos Almarado</nombre>
       <nombre>Armando Arevalo</nombre>
     </socorristas>
+    </cartilla>
   </cuerpo_medico>
 
   <jugadores id="jugadores">
+  <cartilla>
      <identificador>Jugadores</identificador>
      <porteros id="P">
        <identificador>Portero</identificador>
@@ -70,6 +73,7 @@
         <nombre>Cristiano Ronaldo</nombre>
         <nombre>Carlos Alfaro</nombre>
      </delanteros>
+     </cartilla>
    </jugadores>
 <a href="../../../index.html" xmlns="http://www.w3.org/1999/xhtml">Volver al inicio</a>
 </equipo>
